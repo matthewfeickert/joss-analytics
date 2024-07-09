@@ -36,7 +36,8 @@ jobs:
       ## rcrossref requires an email address associated with a query
     - name: Set up crossref email
       run: |
-        echo crossref_email=\"${{ secrets.CROSSREF_EMAIL }}\" >> ~/.Renviron
+        # echo crossref_email=\"${{ secrets.CROSSREF_EMAIL }}\" >> ~/.Renviron
+        echo crossref_email=\"example@test.com\" >> ~/.Renviron
 
     - name: Install dependencies
       run: |
